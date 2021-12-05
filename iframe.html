@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Navigation page</title>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/style.css">
+		<script src="scripts/jquery.js"></script>
+		<script src="scripts/jquery-migrate-1.1.1.js"></script>
+		<script src="scripts/script.js"></script>
+		<script src="scripts/jquery.ui.totop.js"></script>
+		<script src="scripts/superfish.js"></script>
+		<script src="scripts/jquery.equalheights.js"></script>
+		<script src="scripts/jquery.mobilemenu.js"></script>
+		<script src="scripts/jquery.easing.1.3.js"></script>
+		<script>
+		$(document).ready(function(){
+			/*back to top*/
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		})
+		/* show the time in the footer*/
+        setInterval(function(){   
+        var date = new Date();   
+        var year = date.getFullYear();  
+        var mon = date.getMonth()+1;    
+        var da = date.getDate();        
+        var day = date.getDay();       
+        var h = date.getHours();    
+        var m = date.getMinutes();    
+        var s = date.getSeconds();        
+        var d = document.getElementById('Date');    
+          d.innerHTML='Now time is : '+h+':'+m+':'+s;  
+        },1000)
+		</script>
+	</head>
+	<body id="top">
+<!--==============================header=================================-->
+		<header>
+			<div class="container_12">
+				<div class="grid_12">
+					<h1>
+						<a href="index.html">
+							<img src="images/logo.png" alt="Your Happy Family">
+						</a>
+					</h1>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="menu_block ">
+				<div class="container_12">
+					<div class="grid_12">
+						<nav class="horizontal-nav full-width horizontalNav-notprocessed" style="width: fit-content;margin-left: auto;margin-right: auto;">
+							<ul class="sf-menu" style="margin-left: auto;margin-right: auto;width: fit-content;">
+								<li ><a href="index.html">Home</a></li>
+								<li><a href="projects.html">Projects</a></li>
+								<li><a href="edu.html">EDU</a></li>
+								<li><a href="mydevices.html">My Device</a></li>
+								<li><a href="mygallery.html">My Gallery</a></li>
+								<li><a href="mypets.html">My Pets</a></li>
+								<li><a href="contacts.html">Contacts</a></li>
+								<li class="current"><a href="iframe.html">Navigation page</a></li>
+							</ul>
+						</nav>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</header>
+<!--==============================Content=================================-->
+	   <script>
+    /* fullscreen the iframe*/
+    function frameauto() {
+        var ifm = document.getElementById("adlistpage");
+        var subWeb = document.frames ? document.frames["adlistpage"].document : ifm.contentDocument;
+        if (ifm != null && subWeb != null) {
+            ifm.height = subWeb.body.scrollHeight;
+        }
+    }
+</script>
+
+<iframe src="https://jiawei.xin/" id="adlistpage" name="adlistpage"
+frameborder=1 scrolling=no width=100% height=1000 onload="frameauto()"></iframe>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12 ">
+					<div class="copy">
+						Copyright Ruyiyun&copy; 2021. All rights reserved.<a target="_blank" href="#">Ruyiyun</a>. &nbsp;&nbsp;<a href="./privacy.html">Privacy</a>&nbsp;&nbsp;<a href="https://stats.uptimerobot.com/DZEvZsBEyk">Server Status</a><div id="Date"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+	<div style="display:none"><script src='' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

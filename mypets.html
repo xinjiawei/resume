@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My Pets</title>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/touchTouch.css">
+		<script src="scripts/jquery.js"></script>
+		<script src="scripts/jquery-migrate-1.1.1.js"></script>
+		<script src="scripts/script.js"></script>
+		<script src="scripts/jquery.ui.totop.js"></script>
+		<script src="scripts/superfish.js"></script>
+		<script src="scripts/sForm.js"></script>
+		<script src="scripts/jquery.equalheights.js"></script>
+		<script src="scripts/jquery.mobilemenu.js"></script>
+		<script src="scripts/jquery.easing.1.3.js"></script>
+		<script src="scripts/touchTouch.jquery.js"></script>
+		<script>
+		$(document).ready(function(){
+			/*back to top*/
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			/*activite gallary big image*/
+			$('.gallery a.gal').touchTouch();
+		})
+		/* show the time in the footer*/
+        setInterval(function(){   
+        var date = new Date();   
+        var year = date.getFullYear();  
+        var mon = date.getMonth()+1;    
+        var da = date.getDate();        
+        var day = date.getDay();       
+        var h = date.getHours();    
+        var m = date.getMinutes();    
+        var s = date.getSeconds();        
+        var d = document.getElementById('Date');    
+          d.innerHTML='Now time is : '+h+':'+m+':'+s;  
+        },1000)
+		</script>
+	</head>
+	<body id="top">
+<!--==============================header=================================-->
+		<header>
+			<div class="container_12">
+				<div class="grid_12">
+					<h1>
+						<a href="index.html">
+							<img src="images/logo.png" alt="Your Happy Family">
+						</a>
+					</h1>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="menu_block">
+				<div class="container_12">
+					<div class="grid_12">
+						<nav class="horizontal-nav full-width horizontalNav-notprocessed" style="width: fit-content;margin-left: auto;margin-right: auto;">
+							<ul class="sf-menu" style="margin-left: auto;margin-right: auto;width: fit-content;">
+								<li ><a href="index.html">Home</a></li>
+								<li><a href="projects.html">Projects</a></li>
+								<li><a href="edu.html">EDU</a></li>
+								<li><a href="mydevices.html">My Device</a></li>
+								<li><a href="mygallery.html">My Gallery</a></li>
+								<li class="current"><a href="mypets.html">My Pets</a></li>
+								<li><a href="contacts.html">Contacts</a></li>
+								<li><a href="iframe.html">Navigation page</a></li>
+					
+							</ul>
+						</nav>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</header>
+<!--==============================Content=================================-->
+		<div class="content"><div class="ic"></div>
+			<div class="container_12">
+				<div class="grid_12">
+					<h2>Pets Gallery</h2>
+				</div>
+				<div class="clear"></div>
+				<div class="gallery">
+					<div class="grid_9">
+						<p>Her name is Tantan and she is nine years old. I took many photos for her to record her growth. She's part of our family. </p>
+					</div>
+					<div class="clear"></div>
+					<div class="grid_3">
+						<a href="images/cat/big/cat1.jpg" class="gal">
+							<div class="img_block">
+								<img src="images/cat/big/cat1.jpg" alt="" class="img_inner">
+								<span class="l"></span>
+								<span class="ll"></span>
+								<span class="r"></span>
+								<span class="rr"></span>
+								<span class="lb"></span>
+								<span class="llb"></span>
+								<span class="rb"></span>
+								<span class="rrb"></span>
+							</div>
+						</a>
+						<div class="title"><a href="#">Just a new member</a></div>
+					</div>
+					<div class="grid_3">
+						<a href="images/cat/big/cat2.jpg" class="gal">
+							<div class="img_block">
+								<img src="images/cat/big/cat2.jpg" alt="" class="img_inner">
+								<span class="l"></span>
+								<span class="ll"></span>
+								<span class="r"></span>
+								<span class="rr"></span>
+								<span class="lb"></span>
+								<span class="llb"></span>
+								<span class="rb"></span>
+								<span class="rrb"></span>
+							</div>
+						</a>
+						<div class="title"><a href="#">Asleep in the palm of my hand</a></div>
+					</div>
+					<div class="grid_3">
+						<a href="images/cat/big/cat3.jpg" class="gal">
+							<div class="img_block">
+								<img src="images/cat/big/cat3.jpg" alt="" class="img_inner">
+								<span class="l"></span>
+								<span class="ll"></span>
+								<span class="r"></span>
+								<span class="rr"></span>
+								<span class="lb"></span>
+								<span class="llb"></span>
+								<span class="rb"></span>
+								<span class="rrb"></span>
+							</div>
+						</a>
+						<div class="title"><a href="#">By the window, boring</a></div>
+					</div>
+					<div class="grid_3">
+						<a href="images/cat/big/cat4.jpg" class="gal">
+							<div class="img_block">
+								<img src="images/cat/big/cat4.jpg" alt="" class="img_inner">
+								<span class="l"></span>
+								<span class="ll"></span>
+								<span class="r"></span>
+								<span class="rr"></span>
+								<span class="lb"></span>
+								<span class="llb"></span>
+								<span class="rb"></span>
+								<span class="rrb"></span>
+							</div>
+						</a>
+						<div class="title"><a href="#">She suddenly discovered something</a></div>
+					</div>
+					<div class="clear cl2"></div>
+					<div class="grid_3">
+						<a href="images/cat/big/cat5.jpg" class="gal">
+							<div class="img_block">
+								<img src="images/cat/big/cat5.jpg" alt="" class="img_inner">
+								<span class="l"></span>
+								<span class="ll"></span>
+								<span class="r"></span>
+								<span class="rr"></span>
+								<span class="lb"></span>
+								<span class="llb"></span>
+								<span class="rb"></span>
+								<span class="rrb"></span>
+							</div>
+						</a>
+						<div class="title"><a href="#">Climbed up my computer monitor</a></div>
+					</div>
+					<div class="grid_3">
+						<a href="images/cat/big/cat6.jpg" class="gal">
+							<div class="img_block">
+								<img src="images/cat/big/cat6.jpg" alt="" class="img_inner">
+								<span class="l"></span>
+								<span class="ll"></span>
+								<span class="r"></span>
+								<span class="rr"></span>
+								<span class="lb"></span>
+								<span class="llb"></span>
+								<span class="rb"></span>
+								<span class="rrb"></span>
+							</div>
+						</a>
+						<div class="title"><a href="#">Begging me to play with her on the table</a></div>
+					</div>
+					<div class="grid_3">
+						<a href="images/cat/big/cat7.jpg" class="gal">
+							<div class="img_block">
+								<img src="images/cat/big/cat7.jpg" alt="" class="img_inner">
+								<span class="l"></span>
+								<span class="ll"></span>
+								<span class="r"></span>
+								<span class="rr"></span>
+								<span class="lb"></span>
+								<span class="llb"></span>
+								<span class="rb"></span>
+								<span class="rrb"></span>
+							</div>
+						</a>
+						<div class="title"><a href="#">Stole my five bucks</a></div>
+					</div>
+					<div class="grid_3">
+						<a href="images/cat/big/cat8.jpg" class="gal">
+							<div class="img_block">
+								<img src="images/cat/big/cat8.jpg" alt="" class="img_inner">
+								<span class="l"></span>
+								<span class="ll"></span>
+								<span class="r"></span>
+								<span class="rr"></span>
+								<span class="lb"></span>
+								<span class="llb"></span>
+								<span class="rb"></span>
+								<span class="rrb"></span>
+							</div>
+						</a>
+						<div class="title"><a href="#">My friend is holding her, but she is looking at the sausage in my hand</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12 ">
+					<div class="copy">
+						Copyright Ruyiyun&copy; 2021. All rights reserved.<a target="_blank" href="#">Ruyiyun</a>. &nbsp;&nbsp;<a href="./privacy.html">Privacy</a>&nbsp;&nbsp;<a href="https://stats.uptimerobot.com/DZEvZsBEyk">Server Status</a><div id="Date"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+	<div style="display:none"><script src='' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
